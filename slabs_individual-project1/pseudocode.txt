@@ -1,0 +1,12 @@
+BEGIN
+    INPUT student_marks
+    IF student_marks < 0 OR > 100 THEN
+        DISPLAY "Error: Invalid mark!"
+    ELSE
+        IF student_marks >= 50 THEN
+	    DISPLAY "PASS!!"
+	ELSE
+	    DISPLAY "FAIL!!"
+	ENDIF
+    ENDIF
+END
