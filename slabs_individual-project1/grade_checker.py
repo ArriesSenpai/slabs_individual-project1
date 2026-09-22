@@ -8,11 +8,12 @@ theory_mark = float(input("Enter your theory mark(0-100): "))
 final_mark = (practical_mark * 0.4) + (theory_mark * 0.6)
 
 """
-if the final_mark // 50 = 0, "Fail"
-if the final_mark // 50 = anything more than 0, "Pass"
+Boolean function
+if its greater or equal to 50 its true which is (1) 
+if its less than 50 its a false which is (0)
+:status: this will tell us if they passed or not 
 """
-status = ("Fail!" * (1 - int(final_mark // 50))) + ("Pass!" * int(final_mark // 50))
-
+status = ("Fail!", "Pass!")[final_mark >=50]
 
 #prints the results
 print("Your final mark: ", final_mark)
